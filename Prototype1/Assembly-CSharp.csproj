@@ -58,9 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\OpposingVehicle.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />
+    <None Include="Assets\Assets\_Source_Files\_LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

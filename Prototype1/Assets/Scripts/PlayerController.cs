@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float speed = 15.0f;
-    private float turnSpeed = 28.0f;
+    public string inputID;
+    public float speed;
+    public float turnSpeed;
     private float horizontalInput;
     private float forwardInput;
+    public Camera mainCamera;
+    public Camera firstPersonCamera;
+    public KeyCode switchKey;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +22,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //getting player input
-        horizontalInput = Input.GetAxis("Horizontal");
-        forwardInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal" + inputID);
+        forwardInput = Input.GetAxis("Vertical" + inputID);
         //Move the vehicle forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         //turn thr vehicle
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+        //toggles which camera is enabled
+        if(Input.GetKeyDown(switchKey))
+        {
+            mainCamera.enabled = !mainCamera.enabled;
+            firstPersonCamera.enabled = !firstPersonCamera.enabled;
+        }
     }
 }
