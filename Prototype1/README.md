@@ -2,7 +2,7 @@
 This is a 3rd person driving game where you and a friend race to the end trying to avoid all obstacles.
 
  ## Camera
- In this project i coded the camera to follow the player :
+ In this project i coded the camera to follow both the players:
  
  I made the camera so you can switch between cameras while playing c for player 1 and f for player 2:
  
