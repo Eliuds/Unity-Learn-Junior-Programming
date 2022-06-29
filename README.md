@@ -5,3 +5,5 @@ Im gonna do the projects on the unity learn thing unity has to get a refresher o
 
 Check it out - https://github.com/Eliuds/Unity-Learn-Junior-Programming/tree/main/Prototype1
 ## Challenge 1
+
+Check it out - https://github.com/Eliuds/Unity-Learn-Junior-Programming/tree/main/Challenge1
